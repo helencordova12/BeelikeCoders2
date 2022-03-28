@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    </html>
+    <style>
+ .preview {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    
+    display: inline-block;
+    margin: 0 40px 0 0;
+}
+.preview img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.preview > div {
+    background-color: rgba(0,0,0,0.75);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.3s linear;
+    text-shadow: #000 1px 1px 0;
+    color: #ccc;
+    text-align: center;
+}
+.preview:hover > div {
+    display: block;
+    opacity: 1.0;
+}
+.preview > div div {
+    padding: 20px 40px;
+}
+.preview h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.preview p {
+    margin-bottom: 10px;
+}
+h2{
+  color:black;
+}
+    </style>
+    <body>
+      <a href="http://www.page.com/album">
+        <div class="preview">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/e/ec/Record-Album-02.jpg" title="Photo Albums" alt="" />
+            <div>
+                <div>
+                  <br><br><br>   <br><br><br>   <br><br><br> <br><br><br>  <br>
+                    <h2>Photo Albums</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+    
+    <a href="http://www.page.com/storybook">
+        <div class="preview">
+            <img src="http://www.clipartbest.com/cliparts/RiA/6a5/RiA6a5eoT.jpeg" title="Digital Story Books" alt="" />
+            <div>
+                <div>
+                    <h2>Digital Story Books</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+    </body>
+
+</html>
